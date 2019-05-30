@@ -37,7 +37,7 @@ namespace ConsumeWebApiMVC.Controllers
 
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:54269/api/"); // Use the port number for the MemberWebApiProject and stick it into the Base Address.
+                client.BaseAddress = new Uri("http://localhost:52460/api/"); // Use the port number for the MemberWebApiProject and stick it into the Base Address.
 
                 var responseTask = client.GetAsync("member");
                 responseTask.Wait();
