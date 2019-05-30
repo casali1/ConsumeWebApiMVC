@@ -35,7 +35,7 @@ namespace ConsumeWebApiMVC.Controllers
 
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:52044/api/");
+                client.BaseAddress = new Uri("http://localhost:54269/api/");
 
                 var responseTask = client.GetAsync("member");
                 responseTask.Wait();
@@ -60,7 +60,5 @@ namespace ConsumeWebApiMVC.Controllers
 
             return View(members);
         }
-
-
     }
 }
